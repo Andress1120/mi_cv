@@ -1,201 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hoja de Vida — Juan Andrés Marín Franco</title>
-  <meta name="description" content="Hoja de vida de Juan Andrés Marín Franco — Agente de servicio al cliente.">
-  <style>
-    :root{
-      --bg:#f7f9fb;
-      --card:#ffffff;
-      --accent:#0b69ff;
-      --muted:#6b7280;
-      --text:#111827;
-      --maxw:900px;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      background:linear-gradient(180deg, var(--bg), #eef2f7 120px);
-      color:var(--text);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      padding:24px;
-      display:flex;
-      justify-content:center;
-      font-size:16px;
-    }
-    .container{
-      width:100%;
-      max-width:var(--maxw);
-      background:transparent;
-    }
-    header.cv-header{
-      display:flex;
-      gap:20px;
-      align-items:center;
-      margin-bottom:18px;
-    }
-    .avatar{
-      width:96px;height:96px;border-radius:12px;
-      background:linear-gradient(135deg,var(--accent),#7fb1ff);
-      display:flex;align-items:center;justify-content:center;color:white;font-weight:700;
-      flex-shrink:0;
-      font-size:28px;
-      box-shadow:0 6px 18px rgba(11,105,255,0.12);
-    }
-    .hero{
-      background:var(--card);
-      padding:18px;
-      border-radius:12px;
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      box-shadow:0 6px 18px rgba(15,23,42,0.06);
-    }
-    .hero .info h1{margin:0;font-size:20px}
-    .hero .info p{margin:6px 0 0;color:var(--muted)}
-    .contacts{
-      text-align:right;color:var(--muted);
-      font-size:14px;
-    }
-    main{display:grid;grid-template-columns:1fr;gap:14px;margin-top:14px}
-    .card{
-      background:var(--card);
-      padding:18px;border-radius:12px;
-      box-shadow:0 6px 18px rgba(15,23,42,0.04);
-    }
-    h2{margin:0 0 10px;font-size:16px;color:var(--accent)}
-    .meta{color:var(--muted);font-size:14px;margin-bottom:8px}
-    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    ul{margin:8px 0 0;padding-left:18px}
-    li{margin-bottom:6px}
-    address{font-style:normal;color:var(--muted)}
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .skill{background:#f1f5f9;padding:6px 10px;border-radius:999px;font-size:13px;color:#0f172a}
-    .timeline{display:flex;flex-direction:column;gap:10px}
-    .job{padding:10px;border-left:3px solid #e6eefc;border-radius:6px;background:linear-gradient(180deg, rgba(11,105,255,0.03), transparent)}
-    footer{margin-top:12px;text-align:center;color:var(--muted);font-size:13px}
-    @media(min-width:720px){
-      main{grid-template-columns: 2fr 1fr;}
-      .hero{align-items:center}
-      .two-col{grid-template-columns:1fr 1fr}
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de Vida - Juan Andrés Marín Franco</title>
 </head>
 <body>
-  <div class="container" role="main">
-    <header class="cv-header" aria-label="Cabecera de la hoja de vida">
-      <div class="hero" style="width:100%">
-        <div style="display:flex;gap:14px;align-items:center">
-          <div class="avatar" aria-hidden="true">JM</div>
-          <div class="info">
-            <h1>Juan Andrés Marín Franco</h1>
-            <p class="meta">Agente de Servicio al Cliente — Bogotá D.C.</p>
-            <p class="meta" style="margin-top:6px">C.C. 1.001.315.295</p>
-          </div>
-        </div>
-        <div class="contacts" aria-label="Contactos">
-          <div><strong>Tel. fijo:</strong> (601) 526 6704</div>
-          <div><strong>Celular:</strong> 311 515 4210</div>
-          <div style="margin-top:6px"><strong>Email:</strong> <a href="mailto:andresmarin409@yahoo.com">andresmarin409@yahoo.com</a></div>
-          <address style="margin-top:8px">Calle 172A #8-20, Bogotá D.C.</address>
-        </div>
-      </div>
-    </header>
 
-    <main>
-      <!-- Left column: perfil, experiencia -->
-      <section class="card" aria-labelledby="perfil-heading">
-        <h2 id="perfil-heading">Perfil Profesional</h2>
-        <p>Soy una persona comprometida, con sólidos valores y sentido de pertenencia. Me caracterizo por ser responsable, respetuoso y con disposición al aprendizaje continuo y apertura a la retroalimentación. Poseo habilidades de observación, análisis y resolución de problemas, lo que me permite brindar soluciones oportunas en mi entorno laboral. Cuento con un espíritu colaborativo y una actitud positiva hacia el trabajo en equipo.</p>
-      </section>
+  <header>
+    <h1>Juan Andrés Marín Franco</h1>
+    <p>Agente de Servicio al Cliente — Bogotá D.C.</p>
+    <p>C.C. 1.001.315.295</p>
+  </header>
 
-      <aside class="card" aria-labelledby="datos-heading">
-        <h2 id="datos-heading">Datos Personales</h2>
-        <dl>
-          <dt>Fecha de nacimiento</dt><dd class="meta">11 de diciembre de 2000</dd>
-          <dt>Estado civil</dt><dd class="meta">Soltero</dd>
-          <dt>Documento</dt><dd class="meta">C.C. 1.001.315.295 — Bogotá</dd>
-        </dl>
-      </aside>
+  <aside>
+    <h2>Datos Personales</h2>
+    <ul>
+      <li><strong>Fecha de nacimiento:</strong> 11 de diciembre de 2000</li>
+      <li><strong>Estado civil:</strong> Soltero</li>
+      <li><strong>Dirección:</strong> Calle 172A #8-20, Bogotá D.C.</li>
+      <li><strong>Teléfono fijo:</strong> (601) 526 6704</li>
+      <li><strong>Celular:</strong> 311 515 4210</li>
+      <li><strong>Email:</strong> <a href="mailto:andresmarin409@yahoo.com">andresmarin409@yahoo.com</a></li>
+    </ul>
+  </aside>
 
-      <section class="card" aria-labelledby="educacion-heading">
-        <h2 id="educacion-heading">Formación Académica</h2>
-        <div class="two-col">
-          <div>
-            <strong>Bachiller Académico</strong>
-            <div class="meta">Colegio Casablanca — Bogotá D.C. (2017)</div>
-          </div>
-        </div>
-      </section>
+  <main>
+    <section>
+      <h2>Perfil Profesional</h2>
+      <p>
+        Soy una persona comprometida, con valores sólidos y sentido de pertenencia. 
+        Me caracterizo por ser responsable, respetuoso y con disposición al aprendizaje continuo. 
+        Poseo habilidades de observación, análisis y resolución de problemas, lo que me permite brindar soluciones oportunas en mi entorno laboral.
+      </p>
+    </section>
 
-      <section class="card" aria-labelledby="experiencia-heading">
-        <h2 id="experiencia-heading">Experiencia Laboral</h2>
-        <div class="timeline">
-          <article class="job" aria-labelledby="job1">
-            <h3 id="job1">Teleperformance — Agente de Servicio al Cliente (Campaña Mercado Libre)</h3>
-            <div class="meta">Bogotá D.C. | Modalidad híbrida — 30 ago 2023 – 18 jul 2025</div>
-            <ul>
-              <li>Atención y soporte a usuarios de la plataforma Mercado Libre.</li>
-              <li>Resolución de consultas de compras, pagos, envíos y devoluciones.</li>
-              <li>Manejo de herramientas digitales y sistemas internos para gestión de casos.</li>
-              <li>Cumplimiento de indicadores (KPI) como satisfacción del cliente y resolución en primer contacto.</li>
-            </ul>
-          </article>
+    <section>
+      <h2>Formación Académica</h2>
+      <article>
+        <h3>Bachiller Académico</h3>
+        <p>Colegio Casablanca — Bogotá D.C. (2017)</p>
+      </article>
+    </section>
 
-          <article class="job" aria-labelledby="job2">
-            <h3 id="job2">Apex América BPO — Agente Call Center (Campaña WOM)</h3>
-            <div class="meta">Bogotá D.C. — 03 mar 2023 – 28 jun 2023</div>
-            <ul>
-              <li>Venta de servicios móviles pospago (línea outbound).</li>
-              <li>Gestión de llamadas en frío y cierre de ventas.</li>
-            </ul>
-          </article>
+    <section>
+      <h2>Experiencia Laboral</h2>
+      <article>
+        <h3>Teleperformance</h3>
+        <p><strong>Cargo:</strong> Agente de Servicio al Cliente (Mercado Libre)</p>
+        <p><strong>Fechas:</strong> Ago 2023 – Jul 2025</p>
+        <ul>
+          <li>Atención y soporte a usuarios.</li>
+          <li>Gestión de compras, pagos y devoluciones.</li>
+          <li>Cumplimiento de indicadores de calidad.</li>
+        </ul>
+      </article>
 
-          <article class="job" aria-labelledby="job3">
-            <h3 id="job3">GNP — Agente Call Center (Campaña Claro)</h3>
-            <div class="meta">Bogotá D.C. — 21 sep 2021 – 26 dic 2022</div>
-            <ul>
-              <li>Venta de servicios móviles pospago (línea inbound).</li>
-              <li>Uso de CRM y herramientas de gestión de clientes.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
+      <article>
+        <h3>Apex América BPO</h3>
+        <p><strong>Cargo:</strong> Agente Call Center (WOM)</p>
+        <p><strong>Fechas:</strong> Mar 2023 – Jun 2023</p>
+        <ul>
+          <li>Venta de servicios móviles pospago.</li>
+          <li>Llamadas en frío y cierre de ventas.</li>
+        </ul>
+      </article>
 
-      <section class="card" aria-labelledby="habilidades-heading">
-        <h2 id="habilidades-heading">Habilidades</h2>
-        <div class="skills" role="list">
-          <span class="skill" role="listitem">Atención al Cliente</span>
-          <span class="skill" role="listitem">Comunicación Efectiva</span>
-          <span class="skill" role="listitem">Resolución de Problemas</span>
-          <span class="skill" role="listitem">Trabajo en Equipo</span>
-          <span class="skill" role="listitem">Adaptabilidad</span>
-          <span class="skill" role="listitem">Manejo de CRM</span>
-        </div>
+      <article>
+        <h3>GNP</h3>
+        <p><strong>Cargo:</strong> Agente Call Center (Claro)</p>
+        <p><strong>Fechas:</strong> Sep 2021 – Dic 2022</p>
+        <ul>
+          <li>Venta de servicios móviles pospago.</li>
+          <li>Uso de CRM y gestión de clientes.</li>
+        </ul>
+      </article>
+    </section>
 
-        <h2 style="margin-top:14px">Referencia</h2>
-        <div>
-          <strong>Carolina Méndez Ramírez</strong><br>
-          Coordinadora de Operaciones — BPO Services S.A.S.<br>
-          <span class="meta">Tel: 320 456 7890 · Email: <a href="mailto:carolina.mendez@bposervices.com">carolina.mendez@bposervices.com</a></span>
-        </div>
-      </section>
+    <section>
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Atención al Cliente</li>
+        <li>Comunicación Efectiva</li>
+        <li>Resolución de Problemas</li>
+        <li>Trabajo en Equipo</li>
+        <li>Adaptabilidad</li>
+        <li>Manejo de CRM</li>
+      </ul>
+    </section>
 
-    </main>
+    <section>
+      <h2>Referencia</h2>
+      <p><strong>Carolina Méndez Ramírez</strong></p>
+      <p>Coordinadora de Operaciones — BPO Services S.A.S.</p>
+      <p>Tel: 320 456 7890</p>
+      <p>Email: <a href="mailto:carolina.mendez@bposervices.com">carolina.mendez@bposervices.com</a></p>
+    </section>
+  </main>
 
-    <footer class="card" role="contentinfo">
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-        <div>
-          <small>Documento: C.C. 1.001.315.295 — Bogotá D.C.</small>
-        </div>
-        <div style="text-align:right;color:var(--muted)"><small>Hoja de vida generada el: <time datetime="2025-09-26">26 Sep 2025</time></small></div>
-      </div>
-    </footer>
-  </div>
+  <footer>
+    <p>Documento: C.C. 1.001.315.295 — Bogotá D.C.</p>
+    <p>Hoja de vida generada el: <time datetime="2025-09-26">26 Sep 2025</time></p>
+  </footer>
+
 </body>
 </html>
